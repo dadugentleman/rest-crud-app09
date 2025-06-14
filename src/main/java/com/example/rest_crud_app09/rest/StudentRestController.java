@@ -74,7 +74,7 @@ public class StudentRestController {
         StudentErrorResponse error = new StudentErrorResponse();
 
         error.setStatus(HttpStatus.BAD_REQUEST.value());
-        error.setMessage(ex.getMessage());
+        error.setMessage("Mesaj personalizat de erroare");
         error.setTimeStamp(System.currentTimeMillis());
 
         // returnarea ReponseEntity
